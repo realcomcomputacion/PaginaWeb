@@ -1,0 +1,290 @@
+/* font-family: 'Open Sans', sans-serif; */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.inicio {
+    padding-top: 18px;
+    text-align: center;
+}
+
+header h1 {
+    color: rgb(233, 76, 3);
+    font-size: 40px;
+    font-weight: 500;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+    text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px 1px 0 white, -1px -1px 0 white;
+
+}
+
+nav {
+    background-color: grey;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+    /* Acomodar los elementos en la linea */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+    /* display block y alinear texto en conjunto para centrarlo */
+}
+
+nav ul li a:hover {
+    background-color: rgb(87, 87, 87);
+}
+
+footer {
+    background-color: rgb(189, 188, 188);
+    text-align: center;
+    padding: 2px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-style: oblique;
+}
+
+nav ul li a.activo {
+    background-color: rgb(88, 88, 88)
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeimg img {
+    border-radius: 5px;
+}
+
+.bienvenidos {
+    width: 74%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(128, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(165, 165, 165);
+    margin: 10px 0;
+}
+
+.bienvenidos h3 {
+    font-style: italic;
+    text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px 1px 0 white, -1px -1px 0 white;
+
+}
+
+.bienvenidos p {
+    font-size: 13px;
+}
+
+.instructor {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(181, 230, 154);
+    border-radius: 5px;
+    border: 1px solid rgb(165, 165, 165);
+    margin: 10px 0;
+}
+
+.instructor h3 {
+    font-style: italic;
+    text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px 1px 0 white, -1px -1px 0 white;
+
+}
+
+.instructor p {
+    font-size: 13px;
+}
+
+/* inicio bujinkan */
+
+.bujinkan {
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    background-color: rgb(195, 240, 172);
+}
+
+.bujinkan h3 {
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    text-shadow: 1px 1px 0 rgb(7, 7, 7), 1px -1px 0 rgb(5, 5, 5), -1px 1px 0 rgb(7, 7, 7), -1px -1px 0 rgb(8, 8, 8);
+
+}
+
+.bujinkan img {
+    border-radius: 5px;
+}
+
+.bujinkan p {
+    font-size: 13px;
+}
+
+/* fin bujinkan */
+
+/* inicio escuelas */
+.ryuha p {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.nueveescuelas {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.escuela {
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 8px;
+    width: 20%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: rgb(159, 253, 222);
+}
+
+.escuela img {
+    border-radius: 10%;
+    max-width: 60%;
+    box-shadow: 0 0 5px black;
+}
+
+.escuela p {
+    font-size: 13px;
+}
+
+/* fin escuelas */
+
+/* inicio novedades */
+
+.novedades {
+
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.novedades .info h4 {
+    color: rgb(1, 1, 179);
+    font-weight: 600;
+    font-style: italic;
+    border-bottom: 1px solid rgb(0, 119, 255);
+    padding-bottom: 10px;
+}
+
+.novedades .info p {
+    font-size: 13px;
+}
+
+.novedades img {
+    border-radius: 5px;
+}
+
+.novedades:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* fin novedades */
+
+/* inicio contacto */
+.contacto {
+    display: flex;
+    gap: 24px;
+}
+
+.contacto div {
+    width: 100%;
+}
+
+.datos p {
+    font-size: 14px;
+}
+
+.datos ul li {
+    font-size: 15px;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label {
+    min-width: 80px;
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+    background: rgb(211, 210, 210);
+    border-radius: 5px;
+    border: 1px solid rgb(151, 151, 151);
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.formulario p label {
+    display: flex;
+    align-items: center;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+}
+
+.formulario input[type="submit"] {
+    background: rgb(36, 196, 196);
+    box-shadow: 0 0 5px rgb(82, 82, 82);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: rgb(0, 125, 197);
+}
+
+/* fin contacto */
