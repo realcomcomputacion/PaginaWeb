@@ -1,18 +1,18 @@
 <main class="holder contacto">
 <div>
             <h2>Contacto Rápido</h2>
-            <form action="" method="" class="formulario">
+            <form action="/contacto" method="post" class="formulario">
                 <p>
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="" />
+                    <input type="text" name="nombre" />
                 </p>
                 <p>
                     <label for="telefono">Teléfono</label>
-                    <input type="text" name="" />
+                    <input type="text" name="tel" />
                 </p>
                 <p>
                     <label for="email">Email</label>
-                    <input type="text" name="" />
+                    <input type="text" name="email" />
                 </p>
                 <p>
                     <label for="mensaje">Mensaje</label>
@@ -20,6 +20,7 @@
                 </p>
                 <p class="acciones"><input type="submit" value="Enviar"></p>
             </form>
+            <p>{{message}}</p>
         </div>
         <div class="datos">
             <h2>Otras vias de comunicación</h2>
