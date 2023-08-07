@@ -4,14 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-require('dotnev').config();
+require('dotenv').config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var BujinkanRouter = require('./routes/Bujinkan')
-var EscuelasRouter = require('./routes/Escuelas')
-var NovedadesRouter = require('./routes/Novedades')
-var ContactoRouter = require('./routes/Contacto')
+var bujinkanRouter = require('./routes/bujinkan')
+var escuelasRouter = require('./routes/escuelas')
+var novedadesRouter = require('./routes/novedades')
+var contactoRouter = require('./routes/contacto')
 
 var app = express();
 
@@ -27,10 +27,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/Bujinkan', BujinkanRouter);
-app.use('/Escuelas', EscuelasRouter);
-app.use('/Novedades', NovedadesRouter);
-app.use('/Contacto', ContactoRouter);
+app.use('/bujinkan', bujinkanRouter);
+app.use('/escuelas', escuelasRouter);
+app.use('/novedades', novedadesRouter);
+app.use('/contacto', contactoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

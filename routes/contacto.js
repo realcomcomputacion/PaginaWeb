@@ -5,7 +5,7 @@ var nodemailer = require('nodemailer');
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.render('Contacto', {
-    isContacto: true
+    isContacto:true
   });
 });
 
@@ -19,7 +19,7 @@ router.post('/', async (req, res, next) => {
   var obj = {
     to: 'realcom1@hotmail.com',
     subjet: 'Contacto desde la web',
-    html: Nombre + "se contacto a traves y quiere mas info a este correo:" + email + ". <br> Ademas, hizo el siguiente comentario: " + mensaje + ". <br> Su tel es " + telefono
+    html: nombre + " se contacto a traves de la web y quiere mas info a este correo:" + email + ". <br> Ademas, hizo el siguiente comentario: " + mensaje + ". <br> Su tel es " + telefono
   }
 
   var transporter = nodemailer.createTransport({
