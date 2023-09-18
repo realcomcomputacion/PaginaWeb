@@ -3,11 +3,19 @@ var router = express.Router();
 var usuariosmodel = require('./../../models/usuariosmodel');
 
 
-router.get('/', function (req, res, next) { //login.hbs
+router.get('/', function (req, res, next) {
   res.render('admin/login', {
     layout: 'admin/layout'
   });
 });
+
+router.get('/logout', function (req, res, next) {
+  req.session.destroy();
+   res.render('admin/login', {
+    layout: 'admin/layout'
+  });
+});
+
 
 router.post('/', async (req, res, next) => {
   try {
@@ -17,6 +25,10 @@ router.post('/', async (req, res, next) => {
     var data = await usuariosmodel.getUserByUsernameAndPassword(usuario, password);
 
     if (data != undefined) {
+
+      req.session.id_usuario = data.id;
+      req.session.nombre = data.usuario;
+
       res.redirect('admin/novedades');
     } else {
       req.render('admin/login', {

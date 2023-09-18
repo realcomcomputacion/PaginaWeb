@@ -12,11 +12,10 @@
           <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" name="password">
         </div>
       </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    {{#if error}}
+    <p>El usuario o contraseña incorrectos</p>
+    {{/if}}
   </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
-  </form>
-  {{#if error}}
-  <p>El usuario o contraseña incorrectos</p>
-  {{/if}}
-</div>
 </div>

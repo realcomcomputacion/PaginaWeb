@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var usuariosmodel = require('./../../models/usuariosmodel');
 
 
-router.get('/', function (req, res, next) { //login.hbs
+router.get('/', function (req, res, next) { 
   res.render('admin/novedades', {
-    layout: 'admin/layout'
+    layout: 'admin/layout',
+    usuario: req.session.nombre
   });
 });
 
