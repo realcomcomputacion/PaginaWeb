@@ -13,37 +13,37 @@
         </div>
         <div class="col-5 text-end">
             <a href="/admin/novedades/agregar" class="btn btn-success"> <i class="fas fa-plus"></i>
-            Nuevo</a>
+                Nuevo</a>
         </div>
     </div>
 
-<div class="row">
-    <div class="col">
-        <table class="table">
-            <thead>
-                <tr class="table-dark">
-                    <th scope="col">#</th>
-                    <th scope="col">Titulo</th>
-                    <th scope="col" class="text-end">Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                {{#each novedades}}
-                <tr>
-                    <th scope="row">{{id}}</th>
-                    <td>{{titulo}}</td>
-                    <td class="text-end">
-                        <a href=" " class="btn btn-secondary"><i class="fas
-                        fa-pencil-alt"></i></a>
-                        <a href="/admin/novedades/eliminar/{{id}} " class="btn btn-secondary"><i class="fas
-                        fa-trash"></i></a>
-                    </td>
-                </tr>
-                {{/each}}
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col" class="text-end">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td class="text-end">
+                            <a href="/admin/novedades/modificar/{{id}} " class="btn btn-secondary"><i
+                                    class="fas fa-pencil-alt"></i></a>
+                            <a href="/admin/novedades/eliminar/{{id}} " class="btn btn-secondary"><i
+                                    class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
 
 </div>
