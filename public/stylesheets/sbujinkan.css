@@ -184,6 +184,11 @@ nav ul li a.activo {
     font-size: 13px;
 }
 
+.escuela h4 {
+    color: blue;
+    font-style: italic;
+}
+
 /* fin escuelas */
 
 /* inicio novedades */
