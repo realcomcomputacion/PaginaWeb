@@ -137,7 +137,7 @@ nav ul li a.activo {
 .bujinkan h3 {
     font-weight: 500;
     font-style: italic;
-    color: white;
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 0 rgb(7, 7, 7), 1px -1px 0 rgb(5, 5, 5), -1px 1px 0 rgb(7, 7, 7), -1px -1px 0 rgb(8, 8, 8);
 
 }
@@ -156,6 +156,10 @@ nav ul li a.activo {
 .ryuha p {
     font-size: 25px;
     font-style: italic;
+    text-align: center;
+    color: rgb(94, 251, 80);
+    text-shadow: 1px 1px 0 rgb(7, 7, 7), 1px -1px 0 rgb(5, 5, 5), -1px 1px 0 rgb(7, 7, 7), -1px -1px 0 rgb(8, 8, 8);
+
 }
 
 .nueveescuelas {
@@ -173,6 +177,7 @@ nav ul li a.activo {
     box-sizing: border-box;
     background-color: rgb(159, 253, 222);
 }
+
 
 .escuela img {
     border-radius: 10%;
@@ -206,10 +211,12 @@ nav ul li a.activo {
 }
 
 .novedades .info h4 {
-    color: rgb(1, 1, 179);
-    font-size: 18px;
+    color: rgb(73, 73, 255);
+    font-size: 19px;
     font-style: italic;
     padding-bottom: 10px;
+    text-shadow: 1px 1px 0 rgb(7, 7, 7), 1px -1px 0 rgb(5, 5, 5), -1px 1px 0 rgb(7, 7, 7), -1px -1px 0 rgb(8, 8, 8);
+
    
     
 }
